@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 
 
 export const Form = () => {
-    const { register, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors } } = useForm();
     const data = {
         firstname: "",
         lastname: "",
@@ -12,15 +12,14 @@ export const Form = () => {
         color: ""
     };
     
-    const handleChange = (data) => this.setState(data)
-    const onSubmit = data => console.log(data)
+    const onSubmit = data => console.log('Thanks!')
 
     return(
         <div class="formfield">
-            <form onSubmit={onSubmit}>
+            <form onSubmit={handleSubmit(onSubmit)}>
 
                 <div class="firstname">
-                    <input type="text" placeholder="First name" {...register("First name", { required: true, maxLength: 80 })} onChange={handleChange(data.firstname)} /><br />
+                    <input type="text" placeholder="First name" {...register("First name", { required: true, maxLength: 80 })} /><br />
                 </div>
                 <br />
                 <div class="lastname">
