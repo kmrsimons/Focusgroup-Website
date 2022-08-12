@@ -1,5 +1,5 @@
 export const Footer = () => {
     return(
-        <div class="Footer">Laura Astola, Bas Pluijm en Kasper Simons</div>
+        <div className="Footer">Laura Astola, Monica Marquez, Bas Pluijm en Kasper Simons</div>
     )
 }

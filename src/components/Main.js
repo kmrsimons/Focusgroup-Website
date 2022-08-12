@@ -1,9 +1,8 @@
-import { Form } from "./Form"
+import Button from "./Button"
 
 export const Main = () => {
     return(
     <div class="Main">
-        <h3>Form input:</h3>
-        <Form />
+        <Button />
     </div>)
 }

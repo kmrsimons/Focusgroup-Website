@@ -12,6 +12,11 @@
   text-align: center;
   height: 100vh;
   box-sizing: border-box;
+  font-family: 'DynaPuff', cursive;
+}
+
+.bulb-btn:hover {
+  opacity: 60%;
 }
 
 .Footer { 

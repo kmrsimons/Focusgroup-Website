@@ -1,7 +1,7 @@
 export const Header = () => {
     return(
-        <div class="Header">
-            <h1>Machine Learning & Custom Scripting</h1>
+        <div className="Header">
+            <h1>ECO BOT</h1>
         </div>
     )
 }
